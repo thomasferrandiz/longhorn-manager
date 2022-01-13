@@ -29,6 +29,9 @@ steps:
 
 - name: publish-tagged-image
   image: rancher/drone-images:docker-s390x
+  volumes:
+    - name: docker
+      path: /var/run/docker.sock
   settings:
     build_args:
     - ARCH=s390x
