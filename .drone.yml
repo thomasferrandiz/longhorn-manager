@@ -33,6 +33,7 @@ steps:
     - name: docker
       path: /var/run/docker.sock
   settings:
+    purge: false
     build_args:
     - ARCH=s390x
     custom_dns: 1.1.1.1
