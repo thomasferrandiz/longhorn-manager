@@ -24,7 +24,7 @@ steps:
   - dapper ci
   privileged: true
   volumes:
-  - name: socket
+  - name: docker
     path: /var/run/docker.sock
 
 - name: publish-tagged-image
