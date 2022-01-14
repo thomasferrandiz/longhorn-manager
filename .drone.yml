@@ -33,8 +33,6 @@ steps:
     - name: docker
       path: /var/run/docker.sock
   settings:
-    purge: false
-    privileged: true
     build_args:
     - ARCH=s390x
     custom_dns: 1.1.1.1
@@ -50,6 +48,6 @@ steps:
     - tag
 
 volumes:
-- name: socket
+- name: docker
   host:
     path: /var/run/docker.sock
