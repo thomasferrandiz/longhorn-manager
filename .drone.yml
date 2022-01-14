@@ -10,13 +10,6 @@ node:
   arch: s390x
 
 steps:
-- name: fetch
-  image: ubuntu:18.04
-  commands:
-  - apt-get update
-  - apt-get install -y git
-  - git fetch --tags
-
 - name: build
   pull: default
   image: rancher/dapper:v0.5.8
