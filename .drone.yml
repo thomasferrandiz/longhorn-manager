@@ -21,7 +21,7 @@ steps:
     path: /var/run/docker.sock
 
 - name: publish-tagged-image
-  image: rancher/drone-images:docker-s390x
+  image: luistt/docker-s390x
   volumes:
     - name: docker
       path: /var/run/docker.sock
